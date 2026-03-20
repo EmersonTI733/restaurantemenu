@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="area-logo">
+            <img src="./assets/logo.jpg" />
+        </div>
+        <div class="categorias">
+            <a>comidas</a>
+            <a>sucos</a>
+            <a>lanches</a>
+        </div>
+    </header>
+    <section class="banner-pratos">
+        <h3>PRATOS</h3>
+        <div class="box-prato">
+            <img src="./assets/peito de frango.jpg" />
+            <h2>Peito de frango</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="1" min="1" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/bife.jpg" />
+            <h2>bife</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="1" min="1" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/peito de frango.jpg" />
+            <h2>Peito de frango</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="1" min="1" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/bife.jpg" />
+            <h2>bife</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="1" min="1" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <button class="fecha-pedido">Fechar Pedido</button>
+    </section>
+
+</body>
+<script src="./javascript.js"></script>
+
+</html>

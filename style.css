@@ -1,0 +1,99 @@
+/* #B22222 botoes
+#228B22 destaques
+#F5F5DC fundo */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+button{
+    background-color: #B22222;
+}
+body{
+    background-color: #F5F5DC;
+}
+.area-logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.area-logo img{
+    height: 80px;
+    border-radius: 50%;
+}
+.categorias{
+    background-color: #228B22;
+    height: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* alinha horizontalmente no centro */
+    align-items: center;       /* alinha verticalmente no centro */
+}
+.categorias a{
+    color: #F5F5DC;
+    font-weight: bold;
+    font-size: 26px;
+}
+.banner-pratos{
+    background-color:#F5F5DC;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-pratos h3{
+    background-color: #B22222;
+    color: #F5F5DC;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.box-prato{
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding-top: 5px;
+    justify-content: center;
+    
+}
+.box-prato h2{
+    width: 40vw;
+    font-size: 22px;
+    align-items: center;
+}
+.box-prato img{
+    height: 45px;
+    width: 45px;
+}
+
+
+ /* Estilização simples para ficar mais amigável */
+    .quantity-container {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px;
+      position: static;
+      margin-right: 5px;
+    }
+    .quantity-container button{
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+    }
+    input[type="number"] {
+      width: 50px;
+      text-align: center;
+      margin: 0 5px;
+      font-size: 16px;
+      border: 1px black solid;
+    }
+
+    .fecha-pedido{
+        height: 30px;
+        width: 120px;
+    }
