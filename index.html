@@ -14,9 +14,9 @@
             <img src="./assets/logo.jpg" />
         </div>
         <div class="categorias">
-            <a>comidas</a>
-            <a>sucos</a>
-            <a>lanches</a>
+            <a class="cat-comidas">Comidas</a>
+            <a class="cat-sucos">Sucos</a>
+            <a class="cat-lanches">Lanches</a>
         </div>
     </header>
     <section class="banner-pratos">
@@ -26,7 +26,7 @@
             <h2>Peito de frango</h2>
             <div class="quantity-container">
                 <button type="button" class="decrease">-</button>
-                <input type="number" class="quantity" name="quantity" value="1" min="1" max="10" readonly />
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
                 <button type="button" class="increase">+</button>
             </div>
         </div>
@@ -35,7 +35,7 @@
             <h2>bife</h2>
             <div class="quantity-container">
                 <button type="button" class="decrease">-</button>
-                <input type="number" class="quantity" name="quantity" value="1" min="1" max="10" readonly />
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
                 <button type="button" class="increase">+</button>
             </div>
         </div>
@@ -44,7 +44,7 @@
             <h2>Peito de frango</h2>
             <div class="quantity-container">
                 <button type="button" class="decrease">-</button>
-                <input type="number" class="quantity" name="quantity" value="1" min="1" max="10" readonly />
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
                 <button type="button" class="increase">+</button>
             </div>
         </div>
@@ -53,13 +53,94 @@
             <h2>bife</h2>
             <div class="quantity-container">
                 <button type="button" class="decrease">-</button>
-                <input type="number" class="quantity" name="quantity" value="1" min="1" max="10" readonly />
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
                 <button type="button" class="increase">+</button>
             </div>
         </div>
     </section>
-    <section>
-        <button class="fecha-pedido">Fechar Pedido</button>
+    <!-- SESSAO DOS SUCOS -->
+     <section class="banner-sucos">
+        <h3>SUCOS</h3>
+        <div class="box-prato">
+            <img src="./assets/peito de frango.jpg" />
+            <h2>Laranja</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/bife.jpg" />
+            <h2>Maracuja</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/bife.jpg"/>
+            <h2>Caju</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/bife.jpg" />
+            <h2>Tapereba</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SESSAO DOS LANCHES -->
+     <section class="banner-lanches">
+        <h3>LANCHES</h3>
+        <div class="box-prato">
+            <img src="./assets/peito de frango.jpg" />
+            <h2>X-tudo</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/bife.jpg" />
+            <h2>X-salada</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/peito de frango.jpg" />
+            <h2>Uva</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+        <div class="box-prato">
+            <img src="./assets/bife.jpg" />
+            <h2>Kikao</h2>
+            <div class="quantity-container">
+                <button type="button" class="decrease">-</button>
+                <input type="number" class="quantity" name="quantity" value="0" min="0" max="10" readonly />
+                <button type="button" class="increase">+</button>
+            </div>
+        </div>
+    </section>
+    <section class="area-btn-pedido">
+        <button class="btn-fecha-pedido">Fechar Pedido</button>
     </section>
 
 </body>
