@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="./style1.css" />
+</head>
+
+<body>
+    <header>
+        <div class="area-logo">
+            <img src="../assets/logo.jpg" />
+        </div>
+        <div class="barra-info">Gestor de Pedidos</div>
+    </header>
+    <section class="area-pedidos">
+        <table id="tabela-pedido" border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Pedido</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas serão inseridas aqui -->
+                <tr>
+                    <td>emerson</td>
+                    <td><button class="btn-verpedido">Feito</button></td>
+                    <td><button class="status1">Enviado</button></td>
+                </tr>
+                <tr>
+                    <td>emerson</td>
+                    <td><button class="btn-verpedido">Feito</button></td>
+                    <td><button class="status1">Enviado</button></td>
+                </tr>
+                <tr>
+                    <td>emerson</td>
+                    <td><button onclick="mostrarform()" class="btn-verpedido0">Ver Pedido</button></td>
+                    <td><button class="status0">Pendente</button></td>
+                </tr>
+                <tr>
+                    <td>emerson</td>
+                    <td><button onclick="mostrarform()" class="btn-verpedido0">Ver Pedido</button></td>
+                    <td><button class="status0">Pendente</button></td>
+                </tr>
+                <tr>
+                    <td>emerson</td>
+                    <td><button onclick="mostrarform()" class="btn-verpedido0">Ver Pedido</button></td>
+                    <td><button class="status0">Pendente</button></td>
+                </tr>
+                <tr>
+                    <td>emerson</td>
+                    <td><button onclick="mostrarform()" class="btn-verpedido0">Ver Pedido</button></td>
+                    <td><button class="status0">Pendente</button></td>
+                </tr>
+                <tr>
+                    <td>emerson</td>
+                    <td><button onclick="mostrarform()" class="btn-verpedido0">Ver Pedido</button></td>
+                    <td><button class="status0">Pendente</button></td>
+                </tr>
+                <tr>
+                    <td>emerson</td>
+                    <td><button onclick="mostrarform()" class="btn-verpedido0">Ver Pedido</button></td>
+                    <td><button class="status0">Pendente</button></td>
+                </tr>
+                <tr>
+                    <td>emerson</td>
+                    <td><button onclick="mostrarform()" class="btn-verpedido0">Ver Pedido</button></td>
+                    <td><button class="status0">Pendente</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    <!-- AREA DA CAIXA DE PEDIDO -->
+    <form class="formulario-ver-pedido">
+        <textarea name="duvida" placeholder="pedido aqui............."></textarea>
+        <button id="pedido-pronto" onclick="FinPedido()">Pedido Pronto</button>
+        <button id="cancelar-pedido" onclick="CancPedido()">Cancelar Pedido</button>
+    </form>
+    <div class="mascara-formulario" onclick="guardeform()"></div>
+</body>
+<script src="./javascript.js"></script>
+</html>

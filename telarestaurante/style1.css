@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: #F5F5DC;
+    height: 100vh;
+    width: 100vw;
+    margin: 1px 2px 1px 2px;
+}
+
+.area-logo {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-logo img {
+    height: 60px;
+    border-radius: 50%;
+    border: 5px #B22222 solid;
+
+}
+
+.barra-info {
+    height: 30px;
+    background-color: #B22222;
+    color: #F5F5DC;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.area-pedidos {
+    display: grid;
+    height: 60%;
+    width: 100vw;
+    border: 1px #B22222 solid;
+    margin: 2px;
+    overflow-y: auto;
+}
+
+/* STYLE DA TABELA -------------->*/
+.tabela-pedido {
+    width: 100%;
+    border-collapse: collapse;
+    /* Remove espaços entre bordas */
+}
+
+thead {
+    position: sticky;
+    /* fixa o cabeçalho */
+    top: 0;
+    /* garante que fique acima das linhas */
+    background-color: #228B22;
+    /* Cor de fundo do cabeçalho */
+    color: white;
+    /* Texto branco*/
+    width: 100vw;
+    gap: 20px;
+}
+
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    /* Bordas suaves */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Linhas alternadas */
+}
+
+tr:hover {
+    background-color: #ddd;
+    /* Destaque ao passar o mouse */
+}
+
+/* STATUS DOS PEDIDOS  */
+.status1{
+    background-color: #228B22;
+    padding: 4px;
+    width: 100px;
+    border-radius: 40px;
+    color: #F5F5DC;
+    font-weight: bold;
+}
+.status0{
+    background-color: #B22222;
+    padding: 4px;
+    width: 100px;
+    border-radius: 40px;
+    color: #F5F5DC;
+    font-weight: bold;
+}
+.btn-verpedido{
+    background-color: #228B22;
+    padding: 4px;
+    width: 100px;
+    border-radius: 40px;
+    color: #F5F5DC;
+    font-weight: bold;
+}
+.btn-verpedido0{
+    background-color: #FFD700;
+    padding: 4px;
+    width: 100px;
+    border-radius: 40px;
+    color: #B22222;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-verpedido0:hover{
+    border: 2px #228B22 solid;
+}
+
+/* AREA TABELA VER PEDIDO */
+.formulario-ver-pedido{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 20px;
+    top: 30%;
+    left: -300px;
+    border-radius: 4px;
+    padding: 20px;
+    transition: left 0.5s ease-in-out;
+    z-index: 1;
+}
+.formulario-ver-pedido input{
+    height: 40px;
+    border-radius: 5;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #35fc04;
+}
+.formulario-ver-pedido button{
+    height: 20px;
+    width: 120px;
+    color: #F5F5DC;
+    font-weight: bold;
+}
+#pedido-pronto{
+    background-color: #228B22;
+}
+#cancelar-pedido{
+    background-color: #B22222;
+}
+.formulario-ver-pedido textarea{
+    height: 100px;
+    width: 270px;
+    border-radius: 5;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #35fc04;
+}
+
+.mascara-formulario{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(155deg,rgba(18, 10, 16, 0.56) 0%, rgba(35, 65, 77, 0.52) 100%);
+
+}
